@@ -13,3 +13,5 @@ jobs:
     - uses: willsfidell/openapi_change_checker@v0.1
       with: 
         token: ${{ secrets.GITHUB_TOKEN }}
+        spec_source: 'fastapi'
+        fastapi_app: './main.py'
