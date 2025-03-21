@@ -11,3 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: willsfidell/openapi_change_checker@v0.1
+      with: 
+        token: ${{ secrets.GITHUB_TOKEN }}
+        spec_source: 'fastapi'
+        fastapi_app: ${{ github.workspace }}/main.py
