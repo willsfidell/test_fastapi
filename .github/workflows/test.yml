@@ -14,5 +14,5 @@ jobs:
       with: 
         token: ${{ secrets.GITHUB_TOKEN }}
         spec_source: 'fastapi'
-        fastapi_app: 'main.py'
+        fastapi_app: ${github.workspace}/main.py
         consumers_config: '{}'
