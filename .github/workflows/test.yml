@@ -15,4 +15,4 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         spec_source: 'fastapi'
         fastapi_app: './main.py'
-        consumers_config: ''
+        consumers_config: '{}'
